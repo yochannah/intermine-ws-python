@@ -1,5 +1,5 @@
-dist: xenial 
-language: python
+dist: xenial
+language: java
 sudo: false # use container based infrastructure
 env:
     global:
