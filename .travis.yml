@@ -20,4 +20,4 @@ python:
     - "pypy"
     - "pypy3"
 jdk:
-  - openjdk11
+  - openjdk10
