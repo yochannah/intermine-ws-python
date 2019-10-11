@@ -2,7 +2,7 @@ language: python
 sudo: false # use container based infrastructure
 jdk:
 - openjdk8
-dist: 
+dist:
 - trusty
 env:
     global:
@@ -11,12 +11,13 @@ env:
 before_script:
 - "./config/travis/init-solr.sh"
 - "./config/travis/init.sh"
-script: 
+script:
     - python setup.py test
     - python setup.py livetest
 python:
     - "2.7"
     - "3.4"
-    - "3.5" 
-    - "pypy"
-    - "pypy3"
+    - "3.5"
+    - "3.6"
+    - "pypy-7.1.1"
+    - "pypy3-7.1.1"
